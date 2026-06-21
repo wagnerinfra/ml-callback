@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ML Callback</title>
+</head>
+<body>
+    <h1>Callback Mercado Livre</h1>
+    <div id="code"></div>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const code = urlParams.get('code');
+        if(code) {
+            document.getElementById('code').innerHTML = '<h2>Code: ' + code + '</h2>';
+        }
+    </script>
+</body>
+</html>
